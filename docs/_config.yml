@@ -5,9 +5,9 @@ markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
-repository: nanase/japarispark
-url: https://nanase.cc/japarispark
-title: JapariSpark
+repository: nanase/japariorgel
+url: https://nanase.cc/japariorgel
+title: JapariOrgel
 share-links-active:
   twitter: true
 social-network-links:

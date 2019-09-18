@@ -1,0 +1,231 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+body,
+th,
+h1 {
+  font-family: "Lucida Grande", "Calibri", Helvetica, Arial, "BIZ UDPGothic", "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 30px 0 10px 0;
+  font-family: zillaslab, Palatino, "Palatino Linotype", serif;
+}
+
+h2 {
+  background: none;
+  border-top: solid 3px #373737;
+  padding: 10px 0px;
+}
+
+h3 {
+  background-color: #373737;
+  padding: 2px 10px 2px 40px;
+  color: white;
+  line-height: 1.25;
+  display: inline-block;
+  font-weight: 400;
+}
+
+.inner {
+  padding: 20px 40px;
+}
+
+#header_wrap {
+  background: #212121;
+  height: 46px;
+  position: fixed;
+  z-index: 1000;
+
+  .inner {
+    background-image: url({{site.baseurl}}/img/logo.svg);
+    background-repeat: no-repeat;
+    background-size: 130px;
+    background-position: left center;
+    padding: 0;
+    height: 46px;
+  }
+}
+
+#main_content.inner,
+#header_wrap .inner,
+#footer_wrap .inner,
+.header_img .header_box {
+  max-width: 1180px;
+}
+.header_box {
+  min-height: 640px;
+}
+.header_img .header_share {
+  right: 0;
+}
+
+@media (max-width: 1239px) {
+  #main_content.inner,
+  #header_wrap .inner,
+  #footer_wrap .inner,
+  .header_img .header_box {
+    max-width: 1020px;
+  }
+  .header_box {
+    min-height: 540px;
+  }
+  .header_img .header_share {
+    right: 0;
+  }
+}
+
+@media (max-width: 1079px) {
+  #main_content.inner {
+    max-width: 920px;
+    padding: 40px 20px;
+  }
+  #header_wrap .inner {
+    max-width: 920px;
+    margin: 0 20px;
+  }
+  #footer_wrap .inner,
+  .header_img .header_box {
+    max-width: 920px;
+    padding: 0 20px;
+  }
+  .header_box {
+    min-height: 480px;
+  }
+  .header_img .header_share {
+    right: 20px;
+  }
+}
+
+@media (max-width: 719px) {
+  #main_content.inner {
+    max-width: 640px;
+    padding: 40px 20px;
+  }
+  #header_wrap .inner {
+    max-width: 920px;
+    margin: 0 20px;
+  }
+  #footer_wrap .inner,
+  .header_img .header_box {
+    max-width: 640px;
+    padding: 0 20px;
+  }
+  .header_box {
+    min-height: 360px;
+  }
+  .header_img .header_share {
+    right: 20px;
+  }
+}
+
+.header_img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  width: 100%;
+  left: 0;
+  right: 0;
+  color: white;
+  box-shadow: inset 0px -80px 40px 0px black;
+  margin-top: 45px;
+
+  .header_box {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .header_logo {
+    background-image: url({{site.baseurl}}/img/logo.svg);
+    background-repeat: no-repeat;
+    background-size: 320px;
+    background-position: left center;
+    width: 320px;
+    height: 80px;
+  }
+
+  .header_description {
+    font-weight: bold;
+    font-family: zillaslab, Palatino, "Palatino Linotype", serif;
+  }
+
+  .header_content {
+    position: absolute;
+    bottom: 1em;
+    text-shadow: black 2px 2px 4px, black -2px -2px 4px;
+  }
+
+  .header_share {
+    position: absolute;
+    bottom: 1em;
+  }
+
+  .header_version {
+    font-size: 60%;
+  }
+
+  h1 {
+    margin: 0;
+    color: white;
+  }
+
+  .label {
+    margin: 0 1px 0 0px;
+    font-size: 10px;
+    font-weight: normal;
+    padding: 1px 12px;
+    border: 1px solid white;
+    vertical-align: 2px;
+    text-shadow: none;
+
+    &.label-discontinued::after {
+      content: "開発終了";
+    }
+
+    &.label-inprogress::after {
+      content: "開発中";
+    }
+
+    &.label-supported::after {
+      content: "サポート中";
+    }
+  }
+}
+
+#main_content.inner {
+  background-color: white;
+}
+
+#footer_wrap .inner {
+  font-size: 80%;
+}
+
+.table-center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.fit-image-width img {
+  max-width: 100%;
+}
+
+.no-image-border img {
+  box-shadow: none;
+  border: none;
+}
+
+table th a {
+  color: white;
+  text-decoration: underline;
+}
